@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <!-- fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@300&family=Suez+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Menu navegação -->
+  <nav class="navbar navbar-expand-md p-4 text-primary-emphasis bg-primary-subtle  border-primary-subtle  text-bg-primary sticky-top border-bottom navegacao" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand d-md-none" href="#">
+        <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
+        Menu
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end center" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav flex-grow-1 justify-content-between">
+            <li class="nav-item">
+              <img src="./Assets/logo/logo.jpg" width="80em" alt="">
+              <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
+            </a></li>
+            <li class="nav-item Text_nav"><a class="nav-link Text_nav" href="./index.html">Início</a></li>
+            <li class="nav-item Text_nav"><a class="nav-link Text_nav" href="./2-acomodacoes.html">Acomodações</a></li>
+            <li class="nav-item Text_nav"><a class="nav-link Text_nav" href="./3-servicos.html">Serviços</a></li>
+            <li class="nav-item Text_nav"><a class="nav-link Text_nav" href="./4-imagens.html">Imagens</a></li>
+            <li class="nav-item Text_nav"><a class="nav-link Text_nav" href="./5-contato.html">Contato</a></li>
+            <li class="nav-item Text_nav"><a class="nav-link Text_nav" href="./6-reserva.html">Reserva</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">
+              <svg class="bi" width="24" height="24"><use xlink:href="#cart"/></svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<main class="d-flex justify-content-center m-5">
+  <div class="col-md-7 col-lg-8">
+    <h4 class="mb-3">Reserva</h4>
+    <form class="needs-validation" novalidate>
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <label for="firstName" class="form-label">Primeiro Nome</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+          <div class="invalid-feedback">
+            Primeiro nome inválido
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <label for="lastName" class="form-label">Sobrenome</label>
+          <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+          <div class="invalid-feedback">
+            Sobrenome inválido
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="number" class="form-label">Telefone</label>
+          <div class="input-group has-validation">
+            <input type="number" class="form-control" id="number" placeholder="(00) 99999-9999" required>
+          <div class="invalid-feedback">
+            Telefone inválido
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="email" class="form-label">Email</span></label>
+          <input type="email" class="form-control" id="email" placeholder="Exemplo@Exemplo.com">
+          <div class="invalid-feedback">
+            Email inválido
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="datetime-local" class="form-label">Check-in</span></label>
+          <input type="datetime-local" class="form-control" id="datetime-local" placeholder="">
+        </div>
+
+        <div class="col-12">
+          <label for="datetime-local" class="form-label">Check-out</span></label>
+          <input type="datetime-local" class="form-control" id="datetime-local" placeholder="">
+        </div>
+
+        <div class="col-md-5">
+          <label for="Acomodacao" class="form-label">Acomodação</label>
+          <select class="form-select" id="Acomodacao" required>
+            <option>Quarto Cobre</option>
+            <option>Quarto Bronze</option>
+            <option>Quarto Prata</option>
+            <option>Quarto Ouro</option>
+            <option>Quarto Platina</option>
+            <option>Quarto Esmeralda</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid country.
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="Hospedes" class="form-label">Hóspedes</label>
+          <select class="form-select" id="Hospedes" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <div class="invalid-feedback">
+            Número de Hospedes inválido
+          </div>
+        </div>
+
+      <button class="w-100 btn btn-primary btn-lg" type="submit">Concluir</button>
+    </form>
+  </div>
+</div>
+</main>
+
+  <div class="container-fluid bg-primary-subtle " data-bs-theme="dark">
+    <footer class="py-4 my-">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item Text_nav"><a href="../index.html" class="nav-link px-2 Text_nav">Início</a></li>
+        <li class="nav-item Text_nav"><a href="./2-acomodacoes.html" class="nav-link px-2 Text_nav">Acomodações</a></li>
+        <li class="nav-item Text_nav"><a href="./3-servicos.html" class="nav-link px-2 Text_nav">Serviços</a></li>
+        <li class="nav-item Text_nav"><a href="./4-imagens.html" class="nav-link px-2 Text_nav">Imagens</a></li>
+        <li class="nav-item Text_nav"><a href="./5-contato.html" class="nav-link px-2 Text_nav">Contato</a></li>
+        <li class="nav-item Text_nav"><a href="./6-reserva.html" class="nav-link px-2 Text_nav">Reserva</a></li>
+      </ul>
+      <p class="text-center pgfbaixo">&copy; 2024 Vieri Mangueira, @Vieri_M</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

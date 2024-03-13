@@ -1,0 +1,104 @@
+*{
+    font-family: "Suez One", serif;
+}
+
+.Text_nav{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.Text_nav:hover{
+    color: #4980E5;
+}
+
+.pgfbaixo{
+    color: white;
+}
+
+/* Inicio */
+
+.assets_circle{
+    width: 140px;
+    height: 140px;
+}
+
+.assets_centro{
+    width: 500px;
+    height: 300px;
+}
+
+.text_destq{
+    color: #031633;
+}
+
+.botao_destq{
+    background-color: #031633;
+}
+
+.botao_destq:hover{
+    background-color: #4980E5;
+    color: white;
+}
+
+/* Acomodações */
+
+.Img_centro_acomo{
+    background-image: url(.//Assets/AcomodaçoesCentro.jpg);
+    background-size: cover ;
+}
+
+.img_quartos{
+    height: 14em; 
+    width: 100%;
+    border-radius: 5px 5px 0 0 ;
+}
+
+
+/* Serviços */
+
+.center{
+    background-color: #031633;
+}
+
+.imagem_center{
+    background-image: url(./Assets/imagemcentro2.jpg);
+    background-size: cover;
+}
+
+.text_acomo{
+    color: #031633;
+}
+
+.text_acomo_center{
+    color: #031633;
+}
+
+.Text_link_acomo{
+    color: #031633;
+}
+
+.Text_link_acomo:hover{
+    color: #4980E5;
+}
+
+.imagem_center_peq{
+    width: 300px;
+    height: 300px;
+    border-radius: 21px 21px 0 0 ;
+}
+
+/* Galeria */
+
+.Img_centro_galeria{
+    background-image: url(./Assets/Galeriadeimagenscentro.jpg);
+    background-size: cover;
+}
+
+/* Contato */
+
+.text_contact{
+    margin-bottom: 0;
+}
+
+
